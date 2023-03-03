@@ -328,3 +328,143 @@
 //         console.log("Error");
 //         break;
 // }
+
+// function hamada() {
+//     var x = 10;
+//     var y = 20;
+//     var result = 10 * 20;
+//     console.log(result);
+// }
+
+// function hamada(x, y) {
+//     var result = x * y;
+//     console.log(result);
+// }
+
+// hamada(10, 20)
+
+
+                                            /*START GASOLINE*/
+// var type = "Gasoline92"
+// var liters = 20;
+// if (type == "Gasoline92") {
+//     var cash = liters * 9.25;
+//     console.log("The number of liters = " + liters + " and total money = " + cash);
+// } else if (type == "Gasoline95") {
+//     var cash = liters * 10.25;
+//     console.log("The number of liters = " + liters + " and total money = " + cash);
+// } else {
+//     console.log("Enter type Gasoline and Quantity");
+// }
+
+
+/*OTHER WAY*/
+// var l, type;
+// l = 10;
+// type = "Gasoline95";
+// if (type == "Gasoline92") {
+//     document.write("Price Is : "+ l * 9.25)
+// } else if (type == "Gasoline95") {
+//     document.write("Price Is : "+ l * 10.25)
+// }
+
+/*THE SAME QUESTION BY SWITCH*/
+// var l, type;
+// l = 10;
+// type = "Gasoline92";
+// switch (type) {
+//     case "Gasoline92":
+//         document.write("Price Is: " + l * 9.25)
+//         break;
+//     case "Gasoline95":
+//         document.write("Price Is: " + l * 10.25)
+// }
+                                            /*END GASOLINE*/
+
+
+
+/*CALCULATOR WITH SWITCH BY OTHER WAY*/
+// var x, op, z;
+// x = 10;
+// z = 5;
+// op = "+";
+// switch (op) {
+//     case "+":
+//         document.write("The Number Is : " + (x+z))
+//         break;
+//     case "-":
+//         document.write("The Number Is : " + (x - z))
+//         break;
+//     case "*":
+//         document.write("The Number Is : " + (x * z))
+//         break;
+//     case "/":
+//         document.write("The Number Is : " + (x / z))
+//         break;
+//     case "**":
+//         document.write("The Number Is : " + (x ** z))
+//         break;
+//     default:document.write("NaN")
+// }
+
+var moveLeft = 0;
+var moveUp = 0;
+var div = document.getElementById('item')
+document.addEventListener('keydown', function (e){
+    if (e.code == 'ArrowRight') {
+        moveLeft += 100
+        div.style.left = moveLeft + 'px'
+    }
+    else if (e.code == 'ArrowLeft') {
+        moveLeft -= 100
+        div.style.left = moveLeft + 'px'
+    }
+    else if (e.code == 'ArrowDown') {
+        moveUp -= 100
+        div.style.bottom= moveUp + 'px'
+    }
+    else if (e.code == 'ArrowUp'){
+        moveUp +=100
+        div.style.bottom= moveUp + 'px'
+    }
+})
+
+/*TO KNOW INDEXED ANY KEY IN KEYBOARD*/
+// document.addEventListener('keydown',function(e){
+//     console.log(e);
+// })
+
+/*CREATE ELEMENT IN DIV*/
+// var div = document.getElementById('item')
+// var title = document.createElement('h2')
+// title.innerHTML = 'Hello World!'
+// title.classList.add("title")
+// div.appendChild(title)
+// var x = ['Omar', 'Mahmoud', 'Israa', 'Mai']
+// // x.push()
+// // x.unshift()
+// // x.shift()
+// // x.pop()
+// x.splice(1)
+// console.log(x.indexOf('Omar'));
+// console.log(x);
+
+
+// var container = ``
+// for (i = 0; i < 100; i++){
+//     container += `
+//     <div class="cards">
+//         <div class="card">
+//             <img class="w-100" src="background3.jpg" alt="">
+//             <div class="caption p-2">
+//                 <h2>Article 1</h2>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur quae vitae error possimus libero</p>
+//             </div>
+//         </div>
+//     </div>
+//     `
+// }
+// document.getElementById('item').innerHTML = container;
+
+// var btn=document.getElementById('btn')
+// console.log(btn);
