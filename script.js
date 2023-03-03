@@ -340,7 +340,6 @@
 //     var result = x * y;
 //     console.log(result);
 // }
-
 // hamada(10, 20)
 
 
@@ -407,36 +406,32 @@
 //     default:document.write("NaN")
 // }
 
-var moveLeft = 0;
-var moveUp = 0;
-var div = document.getElementById('item')
-document.addEventListener('keydown', function (e){
-    if (e.code == 'ArrowRight') {
-        moveLeft += 100
-        div.style.left = moveLeft + 'px'
-    }
-    else if (e.code == 'ArrowLeft') {
-        moveLeft -= 100
-        div.style.left = moveLeft + 'px'
-    }
-    else if (e.code == 'ArrowDown') {
-        moveUp -= 100
-        div.style.bottom= moveUp + 'px'
-    }
-    else if (e.code == 'ArrowUp'){
-        moveUp +=100
-        div.style.bottom= moveUp + 'px'
-    }
-})
-
-/*TO KNOW INDEXED ANY KEY IN KEYBOARD*/
-// document.addEventListener('keydown',function(e){
-//     console.log(e);
+/*MOVING DIV*/
+// var moveLeft = 0;
+// var moveUp = 0;
+// var div = document.getElementById('item')
+// document.addEventListener('keydown', function (e){
+//     if (e.code == 'ArrowRight') {
+//         moveLeft += 100
+//         div.style.left = moveLeft + 'px'
+//     }
+//     else if (e.code == 'ArrowLeft') {
+//         moveLeft -= 100
+//         div.style.left = moveLeft + 'px'
+//     }
+//     else if (e.code == 'ArrowDown') {
+//         moveUp -= 100
+//         div.style.bottom= moveUp + 'px'
+//     }
+//     else if (e.code == 'ArrowUp'){
+//         moveUp +=100
+//         div.style.bottom= moveUp + 'px'
+//     }
 // })
+
 
 /*CREATE ELEMENT IN DIV*/
 // var div = document.getElementById('item')
-// var title = document.createElement('h2')
 // title.innerHTML = 'Hello World!'
 // title.classList.add("title")
 // div.appendChild(title)
@@ -452,19 +447,39 @@ document.addEventListener('keydown', function (e){
 
 // var container = ``
 // for (i = 0; i < 100; i++){
-//     container += `
-//     <div class="cards">
-//         <div class="card">
-//             <img class="w-100" src="background3.jpg" alt="">
-//             <div class="caption p-2">
-//                 <h2>Article 1</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur quae vitae error possimus libero</p>
-//             </div>
-//         </div>
-//     </div>
-//     `
-// }
-// document.getElementById('item').innerHTML = container;
+    //     container += `
+    //     <div class="cards">
+    //         <div class="card">
+    //             <img class="w-100" src="background3.jpg" alt="">
+    //             <div class="caption p-2">
+    // var title = document.createElement('h2')
+    //                 <h2>Article 1</h2>
+    //                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur quae vitae error possimus libero</p>
+    //     </div>
+    //             </div>
+    //         </div>
+    //     `
+    // }
+    // document.getElementById('item').innerHTML = container;
+    
+    
+    /*FOR SHOW BUTTON IN CONSOLE*/
+    // var btn=document.getElementById('btn')
+    // console.log(btn);
+    
+    /*FOR MOVEMOUSE IN DOCUMENT*/
+    // var move = document.addEventListener('mousemove',function () {
+    //     console.log('Hello');
+    // })
+    
+    /*TO KNOW INDEXED ANY KEY IN KEYBOARD*/
+    // document.addEventListener('keydown',function(e){
+    //     console.log(e);
+    // })
 
-// var btn=document.getElementById('btn')
-// console.log(btn);
+var myImage = document.querySelector('img')
+var move = document.addEventListener('mousemove', function (e) {
+    myImage.style.left = e.clientX + 'px'
+    myImage.style.top = e.clientY + 'px'
+
+    })
