@@ -329,21 +329,25 @@
 //         break;
 // }
 
+// ===============================================================================
+
+/*FUNCTION TO MULTIPLE TWO NUMBER*/
 // function hamada() {
 //     var x = 10;
 //     var y = 20;
 //     var result = 10 * 20;
 //     console.log(result);
 // }
-
+/*SAME QUESTION WITH PARAMETER*/
 // function hamada(x, y) {
 //     var result = x * y;
 //     console.log(result);
 // }
 // hamada(10, 20)
 
-
+// ===============================================================================
                                             /*START GASOLINE*/
+
 // var type = "Gasoline92"
 // var liters = 20;
 // if (type == "Gasoline92") {
@@ -355,7 +359,6 @@
 // } else {
 //     console.log("Enter type Gasoline and Quantity");
 // }
-
 
 /*OTHER WAY*/
 // var l, type;
@@ -380,7 +383,7 @@
 // }
                                             /*END GASOLINE*/
 
-
+// ===============================================================================
 
 /*CALCULATOR WITH SWITCH BY OTHER WAY*/
 // var x, op, z;
@@ -406,6 +409,8 @@
 //     default:document.write("NaN")
 // }
 
+// ===============================================================================
+
 /*MOVING DIV*/
 // var moveLeft = 0;
 // var moveUp = 0;
@@ -429,6 +434,7 @@
 //     }
 // })
 
+// ===============================================================================
 
 /*CREATE ELEMENT IN DIV*/
 // var div = document.getElementById('item')
@@ -444,42 +450,120 @@
 // console.log(x.indexOf('Omar'));
 // console.log(x);
 
+// ===============================================================================
 
+/*FOR LOOP 100 PICTURE*/
 // var container = ``
 // for (i = 0; i < 100; i++){
-    //     container += `
-    //     <div class="cards">
-    //         <div class="card">
-    //             <img class="w-100" src="background3.jpg" alt="">
-    //             <div class="caption p-2">
-    // var title = document.createElement('h2')
-    //                 <h2>Article 1</h2>
-    //                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur quae vitae error possimus libero</p>
-    //     </div>
-    //             </div>
-    //         </div>
-    //     `
-    // }
-    // document.getElementById('item').innerHTML = container;
-    
-    
-    /*FOR SHOW BUTTON IN CONSOLE*/
-    // var btn=document.getElementById('btn')
-    // console.log(btn);
-    
-    /*FOR MOVEMOUSE IN DOCUMENT*/
-    // var move = document.addEventListener('mousemove',function () {
-    //     console.log('Hello');
-    // })
-    
-    /*TO KNOW INDEXED ANY KEY IN KEYBOARD*/
-    // document.addEventListener('keydown',function(e){
-    //     console.log(e);
-    // })
+//     container += `
+//     <div class="cards">
+//         <div class="card">
+//             <img class="w-100" src="background3.jpg" alt="">
+//             <div class="caption p-2">
+//                 <h2>Article 1</h2>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur quae vitae error possimus libero</p>
+//             </div>
+//         </div>
+//     </div>
+// `
+// }
+// document.getElementById('item').innerHTML = container;
 
-var myImage = document.querySelector('img')
-var move = document.addEventListener('mousemove', function (e) {
-    myImage.style.left = e.clientX + 'px'
-    myImage.style.top = e.clientY + 'px'
+// ===============================================================================
 
-    })
+/*FOR SHOW BUTTON IN CONSOLE*/
+// var btn=document.getElementById('btn')
+// console.log(btn);
+
+// ===============================================================================
+
+/*FOR MOVEMOUSE IN DOCUMENT*/
+// var move = document.addEventListener('mousemove',function () {
+//     console.log('Hello');
+// })
+
+// ===============================================================================
+
+/*TO KNOW INDEXED ANY KEY IN KEYBOARD*/
+// document.addEventListener('keydown',function(e){
+//     console.log(e);
+// })
+
+// ===============================================================================
+
+/*FIRE MOUSEMOVE*/
+// var myImage = document.querySelector('img')
+// var move = document.addEventListener('mousemove', function (e) {
+//     myImage.style.left = e.clientX + 'px'
+//     myImage.style.top = e.clientY + 'px'
+// })
+
+// ===============================================================================
+
+/*FOR CLICK ON ANY CAR TO BECOME A BACKGROUND*/
+// var myImages = document.querySelector('.background')
+// var myImg = document.querySelectorAll('.images img')
+// for ( i = 0; i < myImg.length; i++) {
+//     myImg[i].addEventListener('click', function (e) {
+//         // console.log(e.target.getAttribute('src'));
+//     var imgSrc = e.target.getAttribute('src')
+//     myImages.style.backgroundImage = `url(${imgSrc} )`
+//     })
+// }
+
+// ===============================================================================
+
+/*FOR NIGHTCLUB COLOR*/
+document.addEventListener('click', function () {
+    var r = Math.round(Math.random() * 255);
+    var g = Math.round(Math.random() * 255);
+    var b = Math.round(Math.random() * 255);
+    document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')'
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR NIGHTCLUB LIGHT*/
+// function color() {
+// var r = (round().random() * 255)
+// var g = (round().random() * 255)
+// var b = (round().random() * 255)
+// }
